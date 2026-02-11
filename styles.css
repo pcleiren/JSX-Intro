@@ -1,9 +1,16 @@
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+/* Global reset: removes default browser margins and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body: main container, centers content vertically and horizontally */
+/* Used by: <body> element */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +21,12 @@ body {
     padding: 20px;
 }
 
+/* ============================================
+   CARDS CONTAINER
+   ============================================ */
+
+/* Cards container: flexbox wrapper for all pricing cards */
+/* Used by: <div class="cards-container"> */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +36,12 @@ body {
     align-items: flex-start;
 }
 
+/* ============================================
+   CARD COMPONENT
+   ============================================ */
+
+/* Card: individual pricing card container */
+/* Used by: <div class="card"> */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +53,15 @@ body {
     flex-shrink: 0;
 }
 
+/* Card top: contains title, price, and content sections */
+/* Used by: <div class="card-top"> */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Card title: plan name heading */
+/* Used by: <h3 class="card-title"> */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +70,8 @@ body {
     margin-bottom: 8px;
 }
 
+/* Card price: container for price amount and period */
+/* Used by: <p class="card-price"> */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +79,44 @@ body {
     align-items: baseline;
 }
 
+/* Card price amount: main price value */
+/* Used by: <span class="card-price-amount"> */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Card price period: subscription period text (e.g., "/mo.") */
+/* Used by: <span class="card-price-period"> */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Card content: features section container */
+/* Used by: <div class="card-content"> */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Includes text: label for features section */
+/* Used by: <p class="includes-text"> */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Features list: unordered list of plan features */
+/* Used by: <ul class="features-list"> */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Features list item: individual feature row */
+/* Used by: <li> inside .features-list */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +125,8 @@ body {
     color: #26251e;
 }
 
+/* Checkmark: check icon before each feature */
+/* Used by: <span class="checkmark"> */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +134,12 @@ body {
     font-weight: 400;
 }
 
+/* ============================================
+   BUTTON COMPONENT
+   ============================================ */
+
+/* Download button: base styles for action buttons */
+/* Used by: <button class="download-button"> */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +154,39 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Download button hover state */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Download button active state */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Download button primary variant: dark button for Pro plan */
+/* Used by: <button class="download-button primary"> */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Download button primary hover state */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Download button primary active state */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* ============================================
+   PAGE LABEL
+   ============================================ */
+
+/* Page label: fixed label at top of page */
+/* Used by: <p class="page-label"> */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +200,8 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Page label strong: bold text within label */
+/* Used by: <strong> inside .page-label */
 .page-label strong {
     color: #333;
 }
