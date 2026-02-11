@@ -7,21 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet: defines all component styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page label: styled with .page-label (fixed position, top center) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+    
+    <!-- Cards container: styled with .cards-container (flexbox layout) -->
     <div class="cards-container">
+        <!-- Card component: styled with .card (individual pricing card) -->
         <div class="card">
+            <!-- Card top section: styled with .card-top (contains title, price, content) -->
             <div class="card-top">
+                <!-- Card title: styled with .card-title (plan name) -->
                 <h3 class="card-title">Hobby</h3>
+                <!-- Price section: styled with .card-price (container for price amount) -->
                 <p class="card-price">
+                    <!-- Price amount: styled with .card-price-amount (main price text) -->
                     <span class="card-price-amount">Free</span>
                 </p>
+                <!-- Card content: styled with .card-content (features section) -->
                 <div class="card-content">
+                    <!-- Includes text: styled with .includes-text (section label) -->
                     <p class="includes-text">Includes:</p>
+                    <!-- Features list: styled with .features-list (unordered list) -->
                     <ul class="features-list">
                         <li>
+                            <!-- Checkmark: styled with .checkmark (check icon) -->
                             <span class="checkmark">✓</span>
                             No credit card required
                         </li>
@@ -36,19 +49,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- Download button: styled with .download-button.secondary (secondary variant) -->
             <button class="download-button secondary">Download</button>
         </div>
+        
+        <!-- Card component: styled with .card (individual pricing card) -->
         <div class="card">
+            <!-- Card top section: styled with .card-top (contains title, price, content) -->
             <div class="card-top">
+                <!-- Card title: styled with .card-title (plan name) -->
                 <h3 class="card-title">Pro</h3>
+                <!-- Price section: styled with .card-price (container for price amount) -->
                 <p class="card-price">
+                    <!-- Price amount: styled with .card-price-amount (main price text) -->
                     <span class="card-price-amount">$20</span>
+                    <!-- Price period: styled with .card-price-period (subscript text) -->
                     <span class="card-price-period">/mo.</span>
                 </p>
+                <!-- Card content: styled with .card-content (features section) -->
                 <div class="card-content">
+                    <!-- Includes text: styled with .includes-text (section label) -->
                     <p class="includes-text">Everything in Hobby, plus:</p>
+                    <!-- Features list: styled with .features-list (unordered list) -->
                     <ul class="features-list">
                         <li>
+                            <!-- Checkmark: styled with .checkmark (check icon) -->
                             <span class="checkmark">✓</span>
                             Extended limits on Agent
                         </li>
@@ -67,8 +92,51 @@
                     </ul>
                 </div>
             </div>
+            <!-- Download button: styled with .download-button.primary (primary variant) -->
             <button class="download-button primary">Get Pro</button>
         </div>
+        
+        <!-- Card component: styled with .card (individual pricing card) -->
+        <div class="card">
+            <!-- Card top section: styled with .card-top (contains title, price, content) -->
+            <div class="card-top">
+                <!-- Card title: styled with .card-title (plan name) -->
+                <h3 class="card-title">Enterprise</h3>
+                <!-- Price section: styled with .card-price (container for price amount) -->
+                <p class="card-price">
+                    <!-- Price amount: styled with .card-price-amount (main price text) -->
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <!-- Card content: styled with .card-content (features section) -->
+                <div class="card-content">
+                    <!-- Includes text: styled with .includes-text (section label) -->
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <!-- Features list: styled with .features-list (unordered list) -->
+                    <ul class="features-list">
+                        <li>
+                            <!-- Checkmark: styled with .checkmark (check icon) -->
+                            <span class="checkmark">✓</span>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SLA guarantees
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Download button: styled with .download-button.primary (primary variant) -->
+            <button class="download-button primary">Contact Sales</button>
+        </div>
+
     </div>
 </body>
 </html>
